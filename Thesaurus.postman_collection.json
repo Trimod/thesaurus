@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "6ea58199-2bc2-49b4-aab9-b06f31a8cdfa",
+		"name": "Thesaurus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All words",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Synonyms of a word",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/take/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"take",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add synonyms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "words[]",
+							"value": "grab",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "words[]",
+							"value": "take",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "words[]",
+							"value": "inherit",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "words[]",
+							"value": "at",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "words[]",
+							"value": "betting",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "bad",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
